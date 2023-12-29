@@ -22,21 +22,21 @@ public class Animation : MonoBehaviour
         // if a key is being held down we play an animation
         if (Input.GetKey(KeyCode.W))
         {
-            playUpAnimation();
+            playAnimation(4);
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            playLeftAnimation();
+            playAnimation(12);
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            playDownAnimation();
+            playAnimation(0);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            playRightAnimation();
+            playAnimation(8);
         }
-        
+
         // if a key is released, we put the sprite into its last stable frame
         if (Input.GetKeyUp(KeyCode.W))
         {
@@ -62,47 +62,14 @@ public class Animation : MonoBehaviour
     }
 
     // these functions work by checking if a certain amount of time has elapsed and if so, it goes to the next frame and cycles
-    void playLeftAnimation()
+    void playAnimation(int start)
     {
         timer += Time.deltaTime;
         if (timer > animationSpeed)
         {
-            spriteRenderer.sprite = spriteArray[(spriteFrame % 4) + 12];
+            spriteRenderer.sprite = spriteArray[(spriteFrame % 4) + start];
             timer -= animationSpeed;
-            spriteFrame = ((spriteFrame + 1) % 4) + 12;
-        }
-    }
-
-    void playRightAnimation()
-    {
-        timer += Time.deltaTime;
-        if (timer > animationSpeed)
-        {
-            spriteRenderer.sprite = spriteArray[(spriteFrame % 4) + 8];
-            timer -= animationSpeed;
-            spriteFrame = ((spriteFrame + 1) % 4) + 8;
-        }
-    }
-
-    void playUpAnimation()
-    {
-        timer += Time.deltaTime;
-        if (timer > animationSpeed)
-        {
-            spriteRenderer.sprite = spriteArray[(spriteFrame % 4) + 4];
-            timer -= animationSpeed;
-            spriteFrame = ((spriteFrame + 1) % 4) + 4;
-        }
-    }
-
-    void playDownAnimation()
-    {
-        timer += Time.deltaTime;
-        if (timer > animationSpeed)
-        {
-            spriteRenderer.sprite = spriteArray[(spriteFrame % 4) + 0];
-            timer -= animationSpeed;
-            spriteFrame = ((spriteFrame + 1) % 4) + 0;
+            spriteFrame = ((spriteFrame + 1) % 4) + start;
         }
     }
 }

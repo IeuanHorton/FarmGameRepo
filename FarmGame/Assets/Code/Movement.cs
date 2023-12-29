@@ -18,15 +18,15 @@ public class Movement : MonoBehaviour
         {
             transform.position += Vector3.up * movementSpeed;
         }
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             transform.position += Vector3.left * movementSpeed;
         }
-        if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.S))
         {
             transform.position += Vector3.down * movementSpeed;
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D))
         {
             transform.position += Vector3.right * movementSpeed;
         }
