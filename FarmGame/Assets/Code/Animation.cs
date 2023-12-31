@@ -23,47 +23,47 @@ public class Animation : MonoBehaviour
         // if a key is being held down we play an animation
         if (Input.GetKey(KeyCode.W))
         {
-            playAnimation(animationStart.Up);
+            PlayAnimation(AnimationStart.Up);
         }
         else if (Input.GetKey(KeyCode.A))
         {
-            playAnimation(animationStart.Left);
+            PlayAnimation(AnimationStart.Left);
         }
         else if (Input.GetKey(KeyCode.S))
         {
-            playAnimation(animationStart.Down);
+            PlayAnimation(AnimationStart.Down);
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            playAnimation(animationStart.Right);
+            PlayAnimation(AnimationStart.Right);
         }
 
         // if a key is released, we put the sprite into its last stable frame
         if (Input.GetKeyUp(KeyCode.W))
         {
-            spriteRenderer.sprite = spriteArray[(int)animationStart.Up];
+            spriteRenderer.sprite = spriteArray[(int)AnimationStart.Up];
             spriteFrame = 0;
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
-            spriteRenderer.sprite = spriteArray[(int)animationStart.Left];
+            spriteRenderer.sprite = spriteArray[(int)AnimationStart.Left];
             spriteFrame = 0;
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
-            spriteRenderer.sprite = spriteArray[(int)animationStart.Down];
+            spriteRenderer.sprite = spriteArray[(int)AnimationStart.Down];
             spriteFrame = 0;
 
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
-            spriteRenderer.sprite = spriteArray[(int)animationStart.Right];
+            spriteRenderer.sprite = spriteArray[(int)AnimationStart.Right];
             spriteFrame = 0;
         }
     }
 
     // these functions work by checking if a certain amount of time has elapsed and if so, it goes to the next frame and cycles
-    void playAnimation(animationStart aStart)
+    void PlayAnimation(AnimationStart aStart)
     {
         int start = (int)aStart;
         timer += Time.deltaTime;
@@ -76,7 +76,7 @@ public class Animation : MonoBehaviour
     }
 }
 
-enum animationStart : int
+enum AnimationStart : int
 {
     //These animations only have 4 frames
     Down = 0,
