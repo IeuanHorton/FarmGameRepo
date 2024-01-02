@@ -20,6 +20,15 @@ public class Animation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        KeyDown();
+        ReleaseKey();
+    }
+
+    /// <summary>
+    /// KeyDown and Release Key will need to be rewritten as this only works for a player character and other characters will be animation with player input
+    /// </summary>
+    void KeyDown()
+    {
         // if a key is being held down we play an animation
         if (Input.GetKey(KeyCode.W))
         {
@@ -37,28 +46,26 @@ public class Animation : MonoBehaviour
         {
             PlayAnimation(AnimationStart.Right);
         }
+    }
 
-        // if a key is released, we put the sprite into its last stable frame
+    void ReleaseKey()
+    {
+        //Once the player releases the key, the animation will skip to the first frame so a character isn't hanging around mid animation
         if (Input.GetKeyUp(KeyCode.W))
         {
             spriteRenderer.sprite = spriteArray[(int)AnimationStart.Up];
-            spriteFrame = 0;
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
             spriteRenderer.sprite = spriteArray[(int)AnimationStart.Left];
-            spriteFrame = 0;
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
             spriteRenderer.sprite = spriteArray[(int)AnimationStart.Down];
-            spriteFrame = 0;
-
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
             spriteRenderer.sprite = spriteArray[(int)AnimationStart.Right];
-            spriteFrame = 0;
         }
     }
 
