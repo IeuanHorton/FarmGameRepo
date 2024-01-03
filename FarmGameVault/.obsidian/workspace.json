@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7285cbd66f3fb838",
+        "id": "835b8f52e256e00b",
         "type": "tabs",
         "children": [
           {
-            "id": "42d3f591ef59e735",
+            "id": "01a6395de2402d0c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Code/PlayerMovement.cs.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Code/PlayerMovement.cs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Code/PlayerMovement.cs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Code/PlayerMovement.cs.md"
+              }
             }
           }
         ]
@@ -138,6 +146,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "42d3f591ef59e735",
-  "lastOpenFiles": []
+  "active": "68ffe6118e94ca46",
+  "lastOpenFiles": [
+    "Main Canvas.canvas",
+    "Code/PlayerMovement.cs.md",
+    "Code Canvas.canvas",
+    "Code/Animation.cs.md",
+    "Code/PlayerManager.cs.md",
+    "Code/Untitled.canvas",
+    "Animation.md",
+    "Code/MovePlayer().md",
+    "Code/Untitled.md"
+  ]
 }
