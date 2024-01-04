@@ -10081,8 +10081,8 @@ GameObject:
   m_Component:
   - component: {fileID: 376316839}
   - component: {fileID: 376316840}
-  - component: {fileID: 376316841}
   - component: {fileID: 376316842}
+  - component: {fileID: 376316841}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10164,32 +10164,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 376316838}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0faa6226ac337fb4a9bd42db3e1ee839, type: 3}
+  m_Script: {fileID: 11500000, guid: 92ca29c36749ec74cb3b8c498d0d11ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 376316840}
-  spriteArray:
-  - {fileID: -8823968971589436688, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: 2050655969793069519, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: 2889289219574272418, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: 948949311252532266, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -993442554113120537, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -188334853897761116, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: 8242425277797757552, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -7071734084718998226, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -5902056851849386287, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -7585572734230009482, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -7648827896943472923, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -6330300696070502507, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -1727016859518048116, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -172088500061766834, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -2631690575483439899, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -8263451806872571754, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: 8199508112190270853, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: -3823344237459272046, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: 8603094862380112686, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  - {fileID: 6424784710917449587, guid: e0a424d93b2d6ad43beb581657232ecb, type: 3}
-  animationSpeed: 0.2
+  animationSpeed: 1
 --- !u!114 &376316842
 MonoBehaviour:
   m_ObjectHideFlags: 0
